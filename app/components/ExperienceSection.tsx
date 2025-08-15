@@ -95,9 +95,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
             {experience.map((exp, index) => (
               <motion.div
                 key={index}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className={`relative flex items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
                 variants={itemVariants}
               >
                 {/* Timeline point */}
@@ -107,9 +106,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                 {/* Content */}
                 <div
-                  className={`w-full md:w-5/12 ${
-                    index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
-                  }`}
+                  className={`w-full md:w-5/12 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
+                    }`}
                 >
                   <motion.div
                     className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
@@ -119,18 +117,11 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                         "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                     }}
                   >
-                    <div className="flex items-center gap-4 mb-4">
-                      <div
-                        className={`w-12 h-12 rounded-full overflow-hidden ${
-                          index % 2 === 1 ? "order-1" : "md:order-2"
-                        }`}
-                      >
-                        <img
-                          src={exp.logo || generateDefaultLogo(exp.company)}
-                          alt={`${exp.company} logo`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                    <div className={
+                      index % 2 === 1
+                        ? "flex items-center gap-4 mb-4"
+                        : "flex items-center gap-4 mb-4 justify-end"
+                    }>
                       <div
                         className={
                           index % 2 === 1
@@ -149,23 +140,13 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                     <div className="space-y-3">
                       <div
-                        className={`flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 ${
-                          index % 2 === 0 ? "md:justify-end" : "justify-start"
-                        }`}
+                        className={`flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 ${index % 2 === 0 ? "md:justify-end" : "justify-start"
+                          }`}
                       >
                         <CalendarIcon className="w-4 h-4 flex-shrink-0" />
                         <span>
                           {exp.startDate} - {exp.endDate}
                         </span>
-                      </div>
-
-                      <div
-                        className={`flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 ${
-                          index % 2 === 0 ? "md:justify-end" : "justify-start"
-                        }`}
-                      >
-                        <MapPinIcon className="w-4 h-4 flex-shrink-0" />
-                        <span>{exp.location}</span>
                       </div>
 
                       <p className="text-gray-600 dark:text-gray-300 py-3 border-t border-b border-gray-200 dark:border-gray-700 my-3">
@@ -174,9 +155,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                       {/* Skills used */}
                       <div
-                        className={`flex flex-wrap gap-2 mb-4 ${
-                          index % 2 === 0 ? "md:justify-end" : "justify-start"
-                        }`}
+                        className={`flex flex-wrap gap-2 mb-4 ${index % 2 === 0 ? "md:justify-end" : "justify-start"
+                          }`}
                       >
                         {exp.skills.map((skill, skillIndex) => (
                           <span
@@ -191,16 +171,14 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                       {/* Achievements */}
                       <div className="space-y-2">
                         <h4
-                          className={`text-sm font-semibold ${
-                            index % 2 === 0 ? "md:text-right" : "text-left"
-                          }`}
+                          className={`text-sm font-semibold ${index % 2 === 0 ? "md:text-right" : "text-left"
+                            }`}
                         >
                           Key Achievements:
                         </h4>
                         <ul
-                          className={`space-y-1 ${
-                            index % 2 === 0 ? "md:text-right" : "text-left"
-                          }`}
+                          className={`space-y-1 ${index % 2 === 0 ? "md:text-right" : "text-left"
+                            }`}
                         >
                           {exp.achievements.map((achievement, achIndex) => (
                             <li
@@ -208,9 +186,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                               className="flex items-start gap-2"
                             >
                               <CheckIcon
-                                className={`w-4 h-4 text-green-500 mt-1 flex-shrink-0 ${
-                                  index % 2 === 0 ? "md:order-2" : "order-1"
-                                }`}
+                                className={`w-4 h-4 text-green-500 mt-1 flex-shrink-0 ${index % 2 === 0 ? "md:order-2" : "order-1"
+                                  }`}
                               />
                               <span className="text-sm text-gray-600 dark:text-gray-300">
                                 {achievement}

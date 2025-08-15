@@ -6,8 +6,6 @@ import { GraduationCapIcon, CalendarIcon, BookOpenIcon } from 'lucide-react';
 interface Education {
   school: string;
   degree: string;
-  start: string;
-  end: string;
 }
 
 interface EducationSectionProps {
@@ -68,11 +66,10 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
             viewport={{ once: true, margin: "-100px" }}
           >
             {education.map((edu, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
                 variants={itemVariants}
               >
                 {/* Timeline point */}
@@ -81,20 +78,15 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
                 </div>
 
                 {/* Content */}
-                <div className={`w-full md:w-5/12 ${
-                  index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'
-                }`}>
-                  <motion.div 
+                <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'
+                  }`}>
+                  <motion.div
                     className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
                   >
                     <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{edu.school}</h3>
                     <p className="text-primary dark:text-primary-light font-medium mb-3">{edu.degree}</p>
-                    <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4 justify-start md:justify-end">
-                      <CalendarIcon className="w-4 h-4" />
-                      <span>{edu.start} - {edu.end}</span>
-                    </div>
-                    
+
                     {index === 1 && (
                       <div className="mt-4 bg-primary/10 dark:bg-primary/20 p-3 rounded-lg">
                         <div className="flex items-start gap-2">

@@ -20,7 +20,7 @@ export const RESUME_DATA = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/daniel-martin-59a7a5170",
+        url: "https://www.linkedin.com/in/daniel-dream-archiever",
         icon: LinkedInIcon,
       },
     ],
@@ -28,9 +28,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "The Hong Kong University of Science and Technology",
-      degree: "Bachelor's Degree, Information Technology Project Management",
-      start: "2010",
-      end: "2014",
+      degree: "Bachelor's Degree, Information Technology Project Management"
     },
   ],
   skills: [
@@ -114,107 +112,105 @@ export const RESUME_DATA = {
 
   experience: [
     {
-      company: "Hack/House",
-      position: "Senior Frontend Developer",
-      logo: "https://media.licdn.com/dms/image/v2/C560BAQHsTZmsr2IYgA/company-logo_200_200/company-logo_200_200/0/1631747740800?e=1755734400&v=beta&t=GHN4SNWE3ZLR0Xy_WrqOFm9V-KTjbPER9hpog0yJZM4",
-      location: "Toronto, Canada, Remote",
-      startDate: "Nov 2022",
-      endDate: "Present",
-      description: "As a Senior Frontend Developer, I played a key role in migrating a legacy e-commerce platform to BigCommerce and maintaining the supporting infrastructure. I refactored backend systems, automated deployment processes, and ensured top-tier performance and uptime.",
-      skills: [
-        "React",
-        "Next.js",
-        "JavaScript",
-        "Laravel",
+      "company": "Hack/House",
+      "position": "Software Engineer",
+      "startDate": "Nov 2022",
+      "endDate": "July 2025",
+      "description": "Led the design and development of cross-platform mobile and responsive web applications with a focus on performance, maintainability, and AI integration.",
+      "skills": [
+        "React Native",
+        "Nuxt.js",
+        "Firebase",
+        "REST APIs",
         "GraphQL",
-        "AWS",
-        "CI/CD",
-        "Sentry",
-        "Git",
+        "SQLite",
+        "IndexedDB",
+        "OpenAI API",
+        "Jest",
+        "React Testing Library"
       ],
-      achievements: [
-        "Led migration to BigCommerce, improving load time by 40% and reducing bounce rate by 25%",
-        "Refactored backend code to improve system performance and maintainability",
-        "Maintained high uptime (99.99%) and incident response efficiency"
-      ],
+      "achievements": [
+        "Designed and developed cross-platform mobile apps (iOS, Android) and responsive web apps with optimized load times and smooth UX",
+        "Integrated REST APIs and GraphQL with offline storage via SQLite and IndexedDB for robust functionality in low-connectivity scenarios",
+        "Integrated AI-powered content generation via OpenAI API, reducing manual editing time for social media content",
+        "Architected reusable UI components to accelerate delivery cycles and ensure design consistency",
+        "Established unit and integration testing workflows, ensuring stable, high-quality releases"
+      ]
     },
     {
-      company: "Keller Williams Realtys",
-      position: "Senior Software Developer",
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQEHFwO5u-11ag/company-logo_100_100/B4DZU4xn65G8AQ-/0/1740414288405?e=1750896000&v=beta&t=jMnJkMmxluTFTV7wejegwQGFhPmY0UHgio_wOzeyqwY",
-      location: "Austin, Texas, United States, Remote",
-      startDate: "Aug 2020",
-      endDate: "Aug 2022",
-      description:
-        "As a Senior Full Stack Developer, I contributed to the development of enterprise-level real estate platforms. I worked closely with design and UX teams, improved backend service performance, and implemented thorough testing practices within a CI/CD environment.",
-      skills: [
-        "React",
-        "JavaScript",
-        "Modular UI architecture",
+      "company": "Keller Williams Realty, LLC",
+      "position": "Software Developer",
+      "startDate": "Dec 2020",
+      "endDate": "Sep 2022",
+      "description": "Developed enterprise-level real estate platform features with a focus on intuitive design, scalability, and robust deployment pipelines.",
+      "skills": [
+        "Vue.js",
+        "Nuxt.js",
         "Node.js",
-        ".Net",
-        "MySQL",
-        "Oracle",
+        "TailwindCSS",
+        "SCSS",
+        "AWS",
         "Docker",
         "GitHub Actions",
-        "CI/CD",
-        "Unit & Integration Testing"
+        "Kubernetes",
+        "FastAPI",
+        "Python"
       ],
-      achievements: [
-        "Delivered key front-end features for enterprise-scale real estate platforms",
-        "Built robust testing pipelines, significantly improving release stability",
-        "Enhanced system performance across full stack while supporting remote Agile teams"
-      ],
+      "achievements": [
+        "Built and optimized marketing features such as landing page tools, social media post generators, and print material templates",
+        "Developed user-friendly UI components with TailwindCSS and SCSS to improve accessibility for non-technical users",
+        "Implemented DevOps pipelines with AWS, Docker, Kubernetes, and GitHub Actions for automated deployment and scaling",
+        "Integrated REST APIs with backend services built on FastAPI (Python)",
+        "Delivered maintainable, well-documented code adhering to SOLID principles and modern JavaScript/TypeScript practices",
+        "Worked with product teams to align features with business priorities"
+      ]
     },
     {
-      company: "SARCHITECH LTD",
-      position: "Full Stack Developer",
-      logo: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-      location: "London, UK Remote",
-      startDate: "Aug 2020",
-      endDate: "Jun 2017",
-      description:
-        "As a Unity Developer, I led the development of interactive XR/AR experiences tailored to industrial needs. I worked in close collaboration with remote cross-functional teams to bring high-performance Unity applications to life, with robust real-time data handling and UI components.",
-      skills: [
-        "Unity",
-        "C#",
-        "XR/AR",
-        "Mobile",
-        "iOS",
-        "Git/Github",
-        "Agile Development",
-        "corss-functional collaboration",
+      "company": "SARCHITECH LTD",
+      "position": "Software Developer",
+      "startDate": "Jun 2017",
+      "endDate": "Aug 2020",
+      "description": "Contributed to full-stack development projects for enterprise clients, focusing on scalable architecture, API integration, and deployment automation.",
+      "skills": [
+        "React.js",
+        "Angular",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL",
+        "FastAPI",
+        "Python",
+        "GitHub Actions",
+        "Jenkins"
       ],
-      achievements: [
-        "Led development of XR/AR apps for industrial clients",
-        "Created modular Unity components to support scalable 3D user interfaces",
-        "Integrated cloud-based real-time control systems for field operations"
-      ],
+      "achievements": [
+        "Developed full-stack solutions using React.js, Angular, Node.js, and Express.js for enterprise-scale projects",
+        "Designed scalable backend services with MongoDB and PostgreSQL",
+        "Built REST APIs and FastAPI endpoints for frontend integration",
+        "Managed CI/CD pipelines in GitHub Actions and Jenkins for automated deployment",
+        "Implemented secure authentication and authorization flows with JWT and OAuth 2.0"
+      ]
     },
     {
-      company: "Altoros",
-      position: "Full Stack Developer",
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQG87FvfiA9dgQ/company-logo_100_100/company-logo_100_100/0/1686067368517/altoros_systems_logo?e=1755734400&v=beta&t=RV5qrL6GTatzFU46PnVfJVzg8UslXWvrvCPkVLrfVsk",
-      location: "Pleasanton, CA, USA Remote",
-      startDate: "Aug 2020",
-      endDate: "Jun 2017",
-      description:
-        "At Altoros, I worked as a Software Developer on Unity-based applications, enhancing the engine’s capabilities through native Android integrations. My work focused on XR/AI solutions, cross-platform deployment, and creating modular UI systems for complex applications.",
-      skills: [
-        "Java",
-        "C#",
-        "C++",
+      "company": "Altoros",
+      "position": "Frontend Developer",
+      "startDate": "Apr 2015",
+      "endDate": "Apr 2017",
+      "description": "Specialized in building responsive, high-performance frontend solutions for Web3 products with seamless blockchain API integration.",
+      "skills": [
+        "React.js",
         "JavaScript",
-        "Unity",
-        "Android",
-        "Agile",
-        "Modular in Unity"
+        "Web3",
+        "Responsive Design",
+        "UI Components",
+        "Blockchain API Integration"
       ],
-      achievements: [
-        "Built Android-native plugins via JNI for deep Unity hardware integration",
-        "Created high-performance, AI-enhanced XR apps across multiple platforms",
-        "Delivered reusable UI components to improve user interaction and productivity"
-      ],
-    },
+      "achievements": [
+        "Developed and maintained responsive frontend applications optimized for Web3 use cases",
+        "Built scalable, reusable UI components in React.js",
+        "Collaborated with backend teams to optimize API communication and data flow",
+        "Implemented design systems for consistent branding across decentralized application interfaces"
+      ]
+    }
   ],
 } as const;
