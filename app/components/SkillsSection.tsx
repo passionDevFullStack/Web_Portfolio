@@ -140,79 +140,7 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
           </p>
         </motion.div>
 
-        {/* Category Filter */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-3 mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          {categories.map((category) => (
-            <motion.button
-              key={category.id}
-              className={`px-4 py-2 rounded-full flex items-center gap-2 transition-all duration-300 ${
-                activeCategory === category.id
-                  ? "bg-primary text-white shadow-md shadow-primary/20"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-              onClick={() => setActiveCategory(category.id)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {category.icon}
-              {category.label}
-            </motion.button>
-          ))}
-        </motion.div>
-
         {/* Skills Grid */}
-        <motion.div
-          key={activeCategory}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          {filteredSkills.map((skill, index) => {
-            const proficiency = SKILL_PROFICIENCY[skill] || 75;
-            const deviconClass = getDeviconClass(skill);
-
-            return (
-              <motion.div
-                key={`${skill}-${index}`}
-                className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover={{ y: -5 }}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="text-3xl text-primary mr-3">
-                    <i className={`devicon-${deviconClass}-plain colored`}></i>
-                  </div>
-                  <h3 className="text-xl font-semibold">{skill}</h3>
-                </div>
-
-                <div className="relative h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                  <motion.div
-                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${proficiency}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  <span>Proficiency</span>
-                  <span>{proficiency}%</span>
-                </div>
-              </motion.div>
-            );
-          })}
-        </motion.div>
-
         {/* Additional Skills Section */}
         <motion.div
           className="mt-16 bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg"
@@ -221,27 +149,40 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h3 className="text-2xl font-semibold mb-6 text-center">
-            Additional Skills & Methodologies
-          </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              // "Git",
-              // "Docker",
-              "Linux",
-              "Socket Programming",
-              "Project Management",
-              "Problem Solving",
-              "Agile Methodology",
-              "Scrum",
-              // "Jira",
-              "Team Collaboration",
+              "JavaScript",
+              "TypeScript",
+              "React.js",
+              "Next.js",
+              "Vue.js",
+              "Angular",
+              "HTML5",
+              "CSS3",
+              "SCSS",
+              "TailwindCSS",
+              "Node.js",
+              "Express.js",
+              "REST APIs",
+              "GraphQL",
+              "SQL",
+              "MongoDB",
+              "Firebase",
+              "AWS",
+              "Azure",
+              "GCP",
+              "Docker",
+              "Kubernetes",
+              "Jenkins",
+              "GitHub Actions",
+              "Web3 Integration",
+              "AI API Integration",
+              "Responsive Design",
+              "Mobile App Development",
+              "Unit Testing",
               "CI/CD",
-              "Code Review",
-              "Test-Driven Development",
-              "RESTful APIs",
-              "System Design",
-              "Technical Documentation",
+              "FastAPI",
+              "Python"
             ].map((skill, index) => (
               <motion.span
                 key={index}

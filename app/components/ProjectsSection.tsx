@@ -80,44 +80,6 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
           </p>
         </motion.div>
 
-        {/* Filter controls */}
-        <motion.div 
-          className="flex flex-wrap justify-center gap-3 mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <motion.button
-            className={`px-4 py-2 rounded-full transition-all duration-300 ${
-              activeFilter === 'All'
-                ? "bg-primary text-white shadow-md shadow-primary/20"
-                : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-            }`}
-            onClick={() => setActiveFilter('All')}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            All Projects
-          </motion.button>
-          
-          {techStacks.map((tech, index) => (
-            <motion.button
-              key={index}
-              className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                activeFilter === tech
-                  ? "bg-primary text-white shadow-md shadow-primary/20"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-              onClick={() => setActiveFilter(tech)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {tech}
-            </motion.button>
-          ))}
-        </motion.div>
-
         {/* Projects Grid */}
         <motion.div
           key={activeFilter}
@@ -141,11 +103,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative overflow-hidden h-48">
-                <img 
-                  src={getProjectImage(project.title)} 
-                  alt={project.title} 
+                <img
+                  src={getProjectImage(project.title)}
+                  alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500"
-                  style={{ 
+                  style={{
                     transform: hoveredProject === project.title ? 'scale(1.1)' : 'scale(1)'
                   }}
                 />
@@ -153,14 +115,14 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   <h3 className="text-white text-xl font-bold">{project.title}</h3>
                 </div>
               </div>
-              
+
               <div className="p-5">
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full"
                     >
@@ -169,7 +131,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center">
-                  <button 
+                  <button
                     className="text-primary dark:text-primary-light font-medium hover:underline flex items-center gap-1"
                     onClick={(e) => {
                       e.stopPropagation();
@@ -180,7 +142,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                     View Details
                   </button>
                   {project.link && (
-                    <a 
+                    <a
                       href={project.link.href}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -206,7 +168,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               exit={{ opacity: 0 }}
               onClick={() => setSelectedProject(null)}
             >
-              <motion.div 
+              <motion.div
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -215,16 +177,16 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="relative h-64 md:h-80">
-                  <img 
-                    src={getProjectImage(selectedProject.title)} 
-                    alt={selectedProject.title} 
+                  <img
+                    src={getProjectImage(selectedProject.title)}
+                    alt={selectedProject.title}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
                     <h3 className="text-white text-2xl md:text-3xl font-bold">{selectedProject.title}</h3>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {selectedProject.techStack.map((tech, techIndex) => (
-                        <span 
+                        <span
                           key={techIndex}
                           className="px-2 py-1 text-xs bg-white/20 text-white rounded-full"
                         >
@@ -239,7 +201,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {selectedProject.description}
                   </p>
-                  
+
                   {selectedProject.link && (
                     <div className="flex justify-end">
                       <a

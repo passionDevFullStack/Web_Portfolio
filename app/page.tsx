@@ -61,20 +61,20 @@ export default function Portfolio() {
             alt="Logo"
             className="w-20 h-20 rounded-full"
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ 
+            animate={{
               opacity: 1,
               scale: 1,
               rotate: [0, 10, -10, 10, 0],
               y: [0, -10, 0]
             }}
-            transition={{ 
+            transition={{
               duration: 2.5,
               repeat: Infinity,
               repeatType: "reverse",
               ease: [0.25, 0.1, 0.25, 1]
             }}
           />
-          <motion.p 
+          <motion.p
             className="-mt-4 text-gray-700 dark:text-gray-300 text-lg font-medium"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -91,8 +91,8 @@ export default function Portfolio() {
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
@@ -105,7 +105,7 @@ export default function Portfolio() {
     <div className="min-h-screen flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark overflow-x-hidden">
       <NavigationBar activeSection={activeSection} />
 
-      <motion.main 
+      <motion.main
         className="flex-grow"
         initial="hidden"
         animate="visible"
@@ -120,44 +120,44 @@ export default function Portfolio() {
         <motion.section id="home" variants={fadeInUp}>
           <HeroSection data={RESUME_DATA as any} />
         </motion.section>
-        
+
         <motion.section id="about" variants={fadeInUp}>
           <AboutSection data={RESUME_DATA} />
         </motion.section>
-        
+
         <motion.section id="skills" variants={fadeInUp}>
           <SkillsSection skills={[...RESUME_DATA.skills]} />
         </motion.section>
-        
+
         <motion.section id="experience" variants={fadeInUp}>
           <ExperienceSection experience={RESUME_DATA.experience} />
         </motion.section>
-        
+
         <motion.section id="projects" variants={fadeInUp}>
-          <ProjectsSection 
+          <ProjectsSection
             projects={RESUME_DATA.projects.map(project => ({
               ...project,
               techStack: [...project.techStack]
             }))}
           />
         </motion.section>
-        
+
         <motion.section id="education" variants={fadeInUp}>
           <EducationSection education={[...RESUME_DATA.education]} />
         </motion.section>
-        
+
         <motion.section id="contact" variants={fadeInUp}>
-          <ContactSection 
+          <ContactSection
             contact={{
               ...RESUME_DATA.contact,
               social: [...RESUME_DATA.contact.social],
-              tel:'+1 646 980 4723'
-            }} 
+              tel: '+16469804723'
+            }}
             location={RESUME_DATA.location}
           />
         </motion.section>
       </motion.main>
-      
+
       <Footer socialLinks={[...RESUME_DATA.contact.social]} />
     </div>
   );

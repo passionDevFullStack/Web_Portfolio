@@ -122,21 +122,20 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:ucefsahih@gmail.com"
+                  href="mailto:danielmartindevfullstack@gmail.com"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-colors"
                 >
-                  ucefsahih@gmail.com
+                  danielmartindevfullstack@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+212708978739"
+                  href="tel:+16469804723"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-colors"
                 >
-                  +212 708 978 739
+                  +1 646 980 4723
                 </a>
               </li>
-              <li className="text-gray-600 dark:text-gray-400">Morocco</li>
             </ul>
           </div>
         </div>
@@ -155,9 +154,8 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
 
       {/* Scroll to top button */}
       <motion.button
-        className={`fixed bottom-6 right-6 p-3 rounded-full bg-primary text-white shadow-lg ${
-          showScrollTop ? "opacity-100" : "opacity-0 pointer-events-none"
-        } transition-opacity duration-300`}
+        className={`fixed bottom-6 right-6 p-3 rounded-full bg-primary text-white shadow-lg ${showScrollTop ? "opacity-100" : "opacity-0 pointer-events-none"
+          } transition-opacity duration-300`}
         onClick={scrollToTop}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
