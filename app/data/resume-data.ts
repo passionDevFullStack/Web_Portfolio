@@ -4,10 +4,10 @@ export const RESUME_DATA = {
   name: "Daniel Martin",
   location: "Colombia",
 
-  about: "I'm Daniel Martin, a Senior Full Stack Engineer with 10 years of experience building scalable web, mobile, and XR/AR solutions. Skilled in React, Next.js, Node.js, Laravel, Unity, AWS, and Azure, I excel at modernizing systems, integrating AI, and delivering high-performance, user-focused applications in fast-paced, remote environments.",
+  about: "Crystal is pure, sharp, and unyielding — it refracts light to reveal unseen beauty. I am like crystal in my work: transparent in communication, precise in execution, and resilient under pressure. Just as a crystal transforms light into brilliance, I transform complex ideas into clear, high-performing digital solutions.",
   summary:
     "Software Developer with 10 years of experience delivering scalable, high-performance solutions across mobile, web, and enterprise platforms. Proven expertise in full-stack development, frontend engineering, and mobile app creation, with additional strengths in AI-driven features, cloud-native development, DevOps automation. Skilled at architecting robust systems on AWS and Azure, integrating machine learning APIs, and deploying applications through CI/ CD pipelines.Adept at translating business requirements into maintainable code while collaborating effectively with cross - functional teams to deliver impactful user experiences and meet aggressive deadlines.",
-  avatarUrl: "./avatar.png",
+  avatarUrl: "./avatar.jpg",
 
   contact: {
     email: "danielmartindevfullstack@gmail.com",
@@ -67,59 +67,66 @@ export const RESUME_DATA = {
 
   projects: [
     {
-      title: "Pongy",
-      techStack: ["Next.js", "React", "TypeScript"],
+      title: "E-Commerce Platform",
+      techStack: ["React.js", "Next.js", "Node.js", "MongoDB", "AWS", "Docker"],
       description:
-        "Pong contest website with real-time multiplayer games, chat, and security",
+        "Developed a scalable e-commerce platform with secure payment integration, responsive UI, and optimized backend APIs, enabling high availability and smooth user experiences across desktop and mobile.",
+      image: '/1.png',
       link: {
         label: "github.com",
         href: "https://github.com/Fernando-threejs/PingPong",
       },
     },
     {
-      title: "Wordle-Game clone",
-      techStack: ["Html", "Css", "JavaScript"],
-      description: "a simple clone of the famous wordle game",
-
-      link: {
-        label: "github.com",
-        href: "https://github.com/Fernando-threejs/blog",
-      },
-    },
-    {
-      title: "Inception",
-      techStack: ["Docker", "Nginx", "mariaDb", "Wordpress"],
+      title: "Insurance Platform",
+      techStack: ["Vue.js", "Nuxt.js", "FastAPI", "PostgreSQL", "AWS"],
       description:
-        "Created a Docker-based multi-container infrastructure with Nginx, WordPress, and MariaDB for a web application.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/Fernando-threejs/inception",
-      },
-    },
-    {
-      title: "IRC",
-      techStack: ["C++", "Socket Programming"],
-      description:
-        "Internet Relay Chat server (Communication protocol on the Internet)",
+        "Engineered a secure insurance application with policy management tools, automated claims processing, and cloud-native infrastructure for high reliability and compliance.",
+      image: '/5.png',
       link: {
         label: "github.com",
         href: "https://github.com/Fernando-threejs/IRC",
       },
     },
     {
-      title: "cub3D",
-      techStack: ["C", "Graphics"],
+      title: "Shopify CMS Solution",
+      techStack: ["Shopify", "Liquid", "JavaScript", "GraphQL", "TailwindCSS"],
       description:
-        "My first RayCaster with miniLibX. This project is inspired by the world-famous Wolfenstein 3D game.",
+        "Customized and extended Shopify CMS with tailored themes, automated product workflows, and API integrations, improving merchant productivity and storefront performance.",
+      image: '/3.png',
+      link: {
+        label: "github.com",
+        href: "https://github.com/Fernando-threejs/inception",
+      },
+    },
+    {
+      title: "Blockchain DApp",
+      techStack: ["React.js", "Web3.js", "Ethereum", "Solidity", "AWS"],
+      description:
+        "Built a decentralized application integrating blockchain smart contracts, secure wallet connections, and real-time transaction updates, delivering a seamless user interface for Web3 products.",
+      image: '/2.png',
+      link: {
+        label: "github.com",
+        href: "https://github.com/Fernando-threejs/blog",
+      },
+    },
+    {
+      title: "Mobile Chat & Call Service",
+      techStack: ["React Native", "Firebase", "WebRTC", "TypeScript", "Node.js"],
+      description:
+        "Designed and implemented a cross-platform mobile app for real-time chat and VoIP calls, integrating push notifications, offline support, and end-to-end encryption.",
+      image: '/4.png',
       link: {
         label: "github.com",
         href: "https://github.com/Fernando-threejs/cub3D",
       },
     },
     {
-      title: "sash",
-      techStack: ["C", "Software Design and Architecture"],
-      description: "simple implementation of Unix Shell with C",
+      title: "Mobile Utility App",
+      techStack: ["React Native", "SQLite", "REST APIs", "TypeScript"],
+      description:
+        "Created a high-performance mobile utility application with offline capabilities, intuitive UX, and seamless data synchronization across devices.",
+      image: '/6.png',
       link: {
         label: "github.com",
         href: "https://github.com/Fernando-threejs/Sash",

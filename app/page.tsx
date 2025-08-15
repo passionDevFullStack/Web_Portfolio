@@ -57,7 +57,7 @@ export default function Portfolio() {
           className="flex flex-col items-center"
         >
           <motion.img
-            src="./avatar.png"
+            src="./avatar.jpg"
             alt="Logo"
             className="w-20 h-20 rounded-full"
             initial={{ opacity: 0, scale: 0.5 }}

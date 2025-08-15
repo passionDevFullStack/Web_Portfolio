@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
               }}
             >
               <div className="flex items-center gap-4">
-                <img src="./avatar.png" alt="Logo" className="h-14 w-14 rounded-full" />
+                <img src="./avatar.jpg" alt="Logo" className="h-14 w-14 rounded-full" />
                 <span className="text-2xl font-bold gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                   Daniel Martin
                 </span>

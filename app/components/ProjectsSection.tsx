@@ -6,6 +6,7 @@ import { GithubIcon, CodeIcon } from 'lucide-react';
 
 interface Project {
   title: string;
+  image: string;
   description: string;
   techStack: string[];
   link?: {
@@ -57,11 +58,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   };
 
   // Generate a random image for each project (for demo purposes)
-  // In a real project, you'd use actual project images
-  const getProjectImage = (title: string) => {
-    const seed = title.charCodeAt(0) + title.length;
-    return `https://picsum.photos/seed/${seed}/600/400`;
-  };
+  // In a real project, you'd use actual project image
 
   return (
     <div className="py-20 px-4 sm:px-6 md:px-12 overflow-hidden" id="projects">
@@ -104,7 +101,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
             >
               <div className="relative overflow-hidden h-48">
                 <img
-                  src={getProjectImage(project.title)}
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500"
                   style={{
@@ -141,17 +138,6 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                     <CodeIcon className="w-4 h-4" />
                     View Details
                   </button>
-                  {project.link && (
-                    <a
-                      href={project.link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <GithubIcon className="w-5 h-5" />
-                    </a>
-                  )}
                 </div>
               </div>
             </motion.div>
@@ -178,7 +164,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               >
                 <div className="relative h-64 md:h-80">
                   <img
-                    src={getProjectImage(selectedProject.title)}
+                    src={selectedProject.image}
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"
                   />
@@ -201,20 +187,6 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {selectedProject.description}
                   </p>
-
-                  {selectedProject.link && (
-                    <div className="flex justify-end">
-                      <a
-                        href={selectedProject.link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-primary text-white rounded-lg flex items-center gap-2 hover:bg-primary-dark transition-colors"
-                      >
-                        <GithubIcon className="w-4 h-4" />
-                        View on GitHub
-                      </a>
-                    </div>
-                  )}
                 </div>
               </motion.div>
             </motion.div>
