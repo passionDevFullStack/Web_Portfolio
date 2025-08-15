@@ -11,8 +11,6 @@ import {
 interface Experience {
   company: string;
   position: string;
-  logo?: string;
-  location: string;
   startDate: string;
   endDate: string;
   description: string;
