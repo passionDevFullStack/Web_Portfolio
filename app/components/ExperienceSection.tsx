@@ -106,7 +106,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                 {/* Content */}
                 <div
-                  className={`w-full md:w-5/12 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
+                  className={`w-full md:w-6/12 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
                     }`}
                 >
                   <motion.div
@@ -176,25 +176,16 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                         >
                           Key Achievements:
                         </h4>
-                        <ul
-                          className={`space-y-1 ${index % 2 === 0 ? "md:text-right" : "text-left"
+                        <div
+                          className={`space-y-2 ${index % 2 === 0 ? "md:text-right" : "text-left"
                             }`}
                         >
                           {exp.achievements.map((achievement, achIndex) => (
-                            <li
-                              key={achIndex}
-                              className="flex items-start gap-2"
-                            >
-                              <CheckIcon
-                                className={`w-4 h-4 text-green-500 mt-1 flex-shrink-0 ${index % 2 === 0 ? "md:order-2" : "order-1"
-                                  }`}
-                              />
-                              <span className="text-sm text-gray-600 dark:text-gray-300">
-                                {achievement}
-                              </span>
-                            </li>
+                            <div className="text-sm text-gray-600 dark:text-gray-300">
+                              {achievement}
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     </div>
                   </motion.div>

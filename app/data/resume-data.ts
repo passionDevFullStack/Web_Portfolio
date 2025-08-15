@@ -4,10 +4,9 @@ export const RESUME_DATA = {
   name: "Daniel Martin",
   location: "Colombia",
 
-  about:
-    "I'm Daniel Martin, a Senior Full Stack Engineer with over 10 years of experience building scalable web applications and immersive XR/AR solutions. I specialize in technologies like React, Next.js, Node.js, Laravel, and Unity, and have a strong track record of leading remote teams, modernizing legacy systems, and optimizing performance for enterprise and e-commerce platforms.\nWith a passion for clean code, robust architecture, and user-focused design, I bring both technical depth and a collaborative mindset to every project. I'm fully remote-ready and comfortable working across global time zones to deliver high-quality solutions—fast.",
+  about: "I'm Daniel Martin, a Senior Full Stack Engineer with 10 years of experience building scalable web, mobile, and XR/AR solutions. Skilled in React, Next.js, Node.js, Laravel, Unity, AWS, and Azure, I excel at modernizing systems, integrating AI, and delivering high-performance, user-focused applications in fast-paced, remote environments.",
   summary:
-    "Senior Full Stack Web Developer with 10+ years of experience designing scalable, high-performance web applications. Proven leader in full-cycle project delivery, legacy modernization, and e-commerce development using React, Next.js, Node.js, Laravel, AWS, and BigCommerce. Skilled in mentoring junior engineers, leading cross-functional teams, and driving solutions in Agile environments. Fully remote-ready and flexible across global time zones.",
+    "Software Developer with 10 years of experience delivering scalable, high-performance solutions across mobile, web, and enterprise platforms. Proven expertise in full-stack development, frontend engineering, and mobile app creation, with additional strengths in AI-driven features, cloud-native development, DevOps automation. Skilled at architecting robust systems on AWS and Azure, integrating machine learning APIs, and deploying applications through CI/ CD pipelines.Adept at translating business requirements into maintainable code while collaborating effectively with cross - functional teams to deliver impactful user experiences and meet aggressive deadlines.",
   avatarUrl: "./avatar.png",
 
   contact: {
@@ -32,20 +31,38 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "C",
-    "C++",
-    "Html",
-    "Three.js",
-    "Tailwind Css",
     "JavaScript",
     "TypeScript",
-    "React",
-    "Redux",
-    "Node.js/Next.js",
+    "React.js",
+    "Next.js",
+    "Vue.js",
+    "Angular",
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "TailwindCSS",
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "GraphQL",
+    "SQL",
+    "MongoDB",
+    "Firebase",
+    "AWS",
+    "Azure",
+    "GCP",
     "Docker",
-    "Git",
-    "Jira",
-    "Agile/Scrum",
+    "Kubernetes",
+    "Jenkins",
+    "GitHub Actions",
+    "Web3 Integration",
+    "AI API Integration",
+    "Responsive Design",
+    "Mobile App Development",
+    "Unit Testing",
+    "CI/CD",
+    "FastAPI",
+    "Python"
   ],
 
   projects: [
@@ -116,25 +133,14 @@ export const RESUME_DATA = {
       "position": "Software Engineer",
       "startDate": "Nov 2022",
       "endDate": "July 2025",
-      "description": "Led the design and development of cross-platform mobile and responsive web applications with a focus on performance, maintainability, and AI integration.",
-      "skills": [
-        "React Native",
-        "Nuxt.js",
-        "Firebase",
-        "REST APIs",
-        "GraphQL",
-        "SQLite",
-        "IndexedDB",
-        "OpenAI API",
-        "Jest",
-        "React Testing Library"
-      ],
+      "description": "Built high-performance cross-platform apps and web solutions, integrating AI features and ensuring maintainable, test-driven code.",
+      "skills": ["React Native", "Nuxt.js", "Firebase", "REST APIs", "GraphQL", "SQLite", "IndexedDB", "OpenAI API", "Jest", "React Testing Library"],
       "achievements": [
-        "Designed and developed cross-platform mobile apps (iOS, Android) and responsive web apps with optimized load times and smooth UX",
-        "Integrated REST APIs and GraphQL with offline storage via SQLite and IndexedDB for robust functionality in low-connectivity scenarios",
-        "Integrated AI-powered content generation via OpenAI API, reducing manual editing time for social media content",
-        "Architected reusable UI components to accelerate delivery cycles and ensure design consistency",
-        "Established unit and integration testing workflows, ensuring stable, high-quality releases"
+        "Developed mobile and web apps with optimized performance",
+        "Integrated REST/GraphQL APIs with offline storage",
+        "Added AI-powered content tools using OpenAI API",
+        "Created reusable UI components for faster delivery",
+        "Established testing workflows for reliable releases"
       ]
     },
     {
@@ -142,27 +148,14 @@ export const RESUME_DATA = {
       "position": "Software Developer",
       "startDate": "Dec 2020",
       "endDate": "Sep 2022",
-      "description": "Developed enterprise-level real estate platform features with a focus on intuitive design, scalability, and robust deployment pipelines.",
-      "skills": [
-        "Vue.js",
-        "Nuxt.js",
-        "Node.js",
-        "TailwindCSS",
-        "SCSS",
-        "AWS",
-        "Docker",
-        "GitHub Actions",
-        "Kubernetes",
-        "FastAPI",
-        "Python"
-      ],
+      "description": "Delivered enterprise platform features with scalable design, intuitive UX, and automated DevOps pipelines.",
+      "skills": ["Vue.js", "Nuxt.js", "Node.js", "TailwindCSS", "SCSS", "AWS", "Docker", "GitHub Actions", "Kubernetes", "FastAPI", "Python"],
       "achievements": [
-        "Built and optimized marketing features such as landing page tools, social media post generators, and print material templates",
-        "Developed user-friendly UI components with TailwindCSS and SCSS to improve accessibility for non-technical users",
-        "Implemented DevOps pipelines with AWS, Docker, Kubernetes, and GitHub Actions for automated deployment and scaling",
-        "Integrated REST APIs with backend services built on FastAPI (Python)",
-        "Delivered maintainable, well-documented code adhering to SOLID principles and modern JavaScript/TypeScript practices",
-        "Worked with product teams to align features with business priorities"
+        "Built marketing and automation tools for real estate agents",
+        "Improved accessibility with TailwindCSS/SCSS UI components",
+        "Implemented AWS/Docker/Kubernetes CI/CD pipelines",
+        "Integrated REST APIs with FastAPI services",
+        "Delivered clean, maintainable TypeScript code"
       ]
     },
     {
@@ -170,25 +163,14 @@ export const RESUME_DATA = {
       "position": "Software Developer",
       "startDate": "Jun 2017",
       "endDate": "Aug 2020",
-      "description": "Contributed to full-stack development projects for enterprise clients, focusing on scalable architecture, API integration, and deployment automation.",
-      "skills": [
-        "React.js",
-        "Angular",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "PostgreSQL",
-        "FastAPI",
-        "Python",
-        "GitHub Actions",
-        "Jenkins"
-      ],
+      "description": "Developed full-stack enterprise solutions with robust APIs, scalable architectures, and automated deployments.",
+      "skills": ["React.js", "Angular", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "FastAPI", "Python", "GitHub Actions", "Jenkins"],
       "achievements": [
-        "Developed full-stack solutions using React.js, Angular, Node.js, and Express.js for enterprise-scale projects",
-        "Designed scalable backend services with MongoDB and PostgreSQL",
-        "Built REST APIs and FastAPI endpoints for frontend integration",
-        "Managed CI/CD pipelines in GitHub Actions and Jenkins for automated deployment",
-        "Implemented secure authentication and authorization flows with JWT and OAuth 2.0"
+        "Built enterprise apps with React.js, Angular, and Node.js",
+        "Designed scalable backend services (MongoDB, PostgreSQL)",
+        "Developed REST/FastAPI endpoints",
+        "Managed CI/CD with GitHub Actions/Jenkins",
+        "Implemented secure auth with JWT/OAuth 2.0"
       ]
     },
     {
@@ -196,20 +178,13 @@ export const RESUME_DATA = {
       "position": "Frontend Developer",
       "startDate": "Apr 2015",
       "endDate": "Apr 2017",
-      "description": "Specialized in building responsive, high-performance frontend solutions for Web3 products with seamless blockchain API integration.",
-      "skills": [
-        "React.js",
-        "JavaScript",
-        "Web3",
-        "Responsive Design",
-        "UI Components",
-        "Blockchain API Integration"
-      ],
+      "description": "Created responsive, high-performance frontend solutions for Web3 platforms with blockchain API integration.",
+      "skills": ["React.js", "JavaScript", "Web3", "Responsive Design", "UI Components", "Blockchain API Integration"],
       "achievements": [
-        "Developed and maintained responsive frontend applications optimized for Web3 use cases",
-        "Built scalable, reusable UI components in React.js",
-        "Collaborated with backend teams to optimize API communication and data flow",
-        "Implemented design systems for consistent branding across decentralized application interfaces"
+        "Built responsive Web3 applications in React.js",
+        "Developed reusable UI components",
+        "Optimized API data flow with backend teams",
+        "Implemented design systems for dApp interfaces"
       ]
     }
   ],

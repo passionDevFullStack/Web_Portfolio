@@ -20,7 +20,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
       }
     }
   };
-  
+
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -61,7 +61,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
       {/* Background shape */}
       <div className="absolute right-0 top-0 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl -z-10" />
       <div className="absolute left-0 bottom-0 w-96 h-96 bg-secondary/5 dark:bg-secondary/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl -z-10" />
-      
+
       <div className="container mx-auto max-w-6xl">
         <motion.div
           className="text-center mb-16"
@@ -76,7 +76,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left side - Image */}
-          <motion.div 
+          <motion.div
             className="w-full lg:w-5/12"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -93,7 +93,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
                 </p>
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                   <p className="font-medium text-gray-700 dark:text-gray-200">
-                    Currently pursuing my passion for programming in the 42 network, working toward a Master's Degree in IT Architecture.
+                    Let's make some magic.
                   </p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
           </motion.div>
 
           {/* Right side - Qualities */}
-          <motion.div 
+          <motion.div
             className="w-full lg:w-7/12"
             variants={containerVariants}
             initial="hidden"
@@ -111,7 +111,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
             <h3 className="text-2xl font-semibold mb-6 text-center lg:text-left">My Qualities</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {qualities.map((quality, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group"
                   variants={itemVariants}
@@ -128,7 +128,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
               ))}
             </div>
 
-            <motion.div 
+            <motion.div
               className="mt-8 text-center lg:text-left"
               variants={itemVariants}
             >
